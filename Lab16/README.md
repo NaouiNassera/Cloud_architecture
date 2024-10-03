@@ -13,25 +13,25 @@
 
 [Access Control IAM](/Lab16:ACCESS_Control_IAM.png)<br/>
 [Role assignement](/Lab16/add_role_assignement.png)
-[](/Lab16)
-[](/Lab16)
 
 
 <h1>Create custom roles with specific permissions</h1>
 
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>navigate to Ressource group </li>
+<li>go to Access control (IAM)</li>
+<li>Add custom Role</li>
+<ul>
+<li>Configure Basic Settings</li>
+<li>Define Permissions </li>
+<li>Set Assignable Scopes</li>
+</ul>
 </ul>
 
 
-[](/Lab16)
-[](/Lab16)
-[](/Lab16)
-[](/Lab16)
+[Ressource group](/Lab16/ressource%20group.png)
+[Add custom role](/Lab16/add_custom_role.png)
+
 
 <h1>Test access levels for different roles</h1>
 
