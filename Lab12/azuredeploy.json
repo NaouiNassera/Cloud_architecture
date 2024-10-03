@@ -1,0 +1,73 @@
+{
+   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+   "contentVersion": "1.0.0.0",
+   "parameters": {
+      "vmName": {
+         "type": "string",
+         "defaultValue": "myWindowsVM",
+         "metadata": {
+            "description": "Name of the virtual machine."
+         }
+      },
+      "location": {
+         "type": "string",
+         "defaultValue": "japaneast",
+         "metadata": {
+            "description": "The location to deploy the resources."
+         }
+      },
+      "storageAccountName": {
+         "type": "string",
+         "metadata": {
+            "description": "The name of the existing storage account."
+         }
+      }
+   },
+   "variables": {},
+   "resources": [
+      {
+         "type": "Microsoft.Compute/virtualMachines",
+         "apiVersion": "2020-06-01",
+         "name": "[parameters('vmName')]",
+         "location": "[parameters('location')]",
+         "properties": {
+            "hardwareProfile": {
+               "vmSize": "Standard_B2s"
+            },
+            "osProfile": {
+               "computerName": "[parameters('vmName')]",
+               "adminUsername": "azureuser",
+               "adminPassword": "NASSERA1996nn"
+            },
+            "networkProfile": {
+               "networkInterfaces": [
+                  {
+                     "id": "[resourceId('Microsoft.Network/networkInterfaces', 'Vnet')]"
+                  }
+               ]
+               
+            },
+            "storageProfile": {  // Add the storageProfile section
+               "osDisk": {
+                  "createOption": "FromImage",
+                  "managedDisk": {
+                     "storageAccountType": "Standard_LRS"
+                  }
+               },
+               "imageReference": {
+                  "publisher": "MicrosoftWindowsServer",
+                  "offer": "WindowsServer",
+                  "sku": "2019-Datacenter",
+                  "version": "latest"
+               }
+            }
+         }
+      }
+   ],
+   "outputs": {
+      "storageAccountId": {
+         "type": "string",
+         "value": "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName'))]"
+      }
+   }
+}
