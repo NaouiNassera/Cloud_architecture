@@ -29,39 +29,31 @@
 </ul>
 
 
-[Ressource group](/Lab16/ressource%20group.png)
+[Ressource group](/Lab16/ressource%20group.png)<br/>
 [Add custom role](/Lab16/add_custom_role.png)
 
 
 <h1>Test access levels for different roles</h1>
 
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Test Resource Access</li>
+<li>Verify Role Limitations</li>
 </ul>
 
 
-[](/Lab16)
-[](/Lab16)
-[](/Lab16)
-[](/Lab16)
+[Test Ressource Access](/Lab16/test_roles.png)<br/>
+[As owner I have no limitations](/Lab16/0_LIMITATIONS.png)
 
 
 <h1>Audit access using activity logs</h1>
 
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Navigate to the Resource group</li>
+<li>Filter the Activity Log by Date, Event type</li>
+<li>Review User Actions</li>
+
 </ul>
 
 
-[](/Lab16)
-[](/Lab16)
-[](/Lab16)
-[](/Lab16)
+[Filter by ressource](/Lab16/filter_by_ressource.png)<br/>
+[User actions review](/Lab16/USER_actions_review.png)
