@@ -29,12 +29,16 @@
 <h1>Visualize Data Using Azure Dashboards</h1>
 
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Create an Azure Dashboard</li>
+<li> Add Metrics to the Dashboard</li>
+<li>Save the Dashboard</li>
 </ul>
 
-[]()
-[]()
-[]()
+[create Dashboard](/Lab11/Add_metrics_Dashboard.png)<br/>
+[Metrics config](/Lab11/Metrics_config.png)
+
+
+<h1>Implement Action Groups for Alert Notifications</h1>
+
+[Action Groups for Alert Notifications](/Lab11/actions_group_for_alert.png)<br/>
+[Action groups](/Lab11/Actions_groups.png)
