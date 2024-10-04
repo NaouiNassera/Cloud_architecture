@@ -1,3 +1,5 @@
+### all the commands was process under WSL UBUNTO 
+
 # Clear local cache
 func azure functionapp delete MyFunctionApp
 
@@ -15,3 +17,12 @@ func start
 
 # If needed, run with verbose output
 func start --verbose
+
+
+
+####  U can find the creation of the function on the code inside this folder 
+- function_app.py
+- __init__.py
+- function.json
+- host.json
+  

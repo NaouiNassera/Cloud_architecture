@@ -1,0 +1,16 @@
+{
+    "bindings": [
+      {
+        "type": "httpTrigger",
+        "direction": "in",
+        "authLevel": "anonymous",
+        "methods": ["get", "post"],
+        "route": "HelloWorldFunction"
+      },
+      {
+        "type": "http",
+        "direction": "out"
+      }
+    ]
+  }
+  
